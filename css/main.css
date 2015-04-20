@@ -9,6 +9,31 @@ body {
 	color: #ef7900;
 }
 
+.b-center {
+	width: 945px;
+	margin: 0 auto;
+}
+
+.b-title {
+	font-size: 36px;
+	font-weight: bold;
+	background-image: url(../i/title_line.png);
+	background-repeat: repeat-x;
+	background-position: 0 25px;
+	margin-bottom: 27px;
+}
+
+.arr {
+	cursor: pointer;
+}
+
+.disabled {
+	opacity: 0.2;
+	cursor: default;
+}
+
+
+
 .nav {
 	width: 100%;
 	height: 54px;
@@ -143,4 +168,115 @@ body {
 .promo-about-number {
 	font-size: 150px;
 	line-height: 150px;
+}
+
+
+
+.services {
+	padding: 30px 0;
+}
+
+.services-title-bg {
+	background-color: #fff;
+	padding-right: 20px;
+}
+
+.services-description {
+	font-size: 18px;
+	line-height: 27px;
+	margin-bottom: 27px;
+}
+
+.services-items {
+	overflow: hidden;
+}
+
+.service-item:nth-of-type(6n) {
+	margin: 0 0 27px 0;
+}
+
+.service-item {
+	width: 135px;
+	padding-top: 150px;
+	margin: 0 27px 27px 0;
+	font-size: 14px;
+	text-align: center;
+	float: left;
+	line-height: 14px;
+	background-repeat: no-repeat;
+	background-position: center 0;
+}
+
+.s01 {background-image: url(../i/service_01.png);}
+.s02 {background-image: url(../i/service_02.png);}
+.s03 {background-image: url(../i/service_03.png);}
+.s04 {background-image: url(../i/service_04.png);}
+.s05 {background-image: url(../i/service_05.png);}
+.s06 {background-image: url(../i/service_06.png);}
+.s07 {background-image: url(../i/service_07.png);}
+.s08 {background-image: url(../i/service_08.png);}
+.s09 {background-image: url(../i/service_09.png);}
+.s10 {background-image: url(../i/service_10.png);}
+.s11 {background-image: url(../i/service_11.png);}
+.s12 {background-image: url(../i/service_12.png);}
+
+
+
+.projects {
+	background-color: #eceae4;
+	background-image: url(../i/building_pattern.png);
+	background-repeat: repeat-x;
+	padding: 170px 0 27px 0;
+}
+
+.projects-title-bg {
+	background-color: #eceae4;
+	padding-right: 20px;
+}
+
+.projects-gallery-all {
+	width: 999px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.projects-gallery {
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.projects-gallery ul li {
+	width: 216px;
+	margin: 0 8px;
+	background-color: #fff;
+	min-height: 350px;
+}
+
+.projects-prev {
+	position: absolute;
+	top: 50px;
+	left: 0;
+}
+
+.projects-next {
+	position: absolute;
+	top: 50px;
+	right: 0;
+}
+
+.project-title {
+	padding: 10px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.project-address {
+	padding: 0 10px;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.project-description {
+	padding: 10px;
+	font-size: 12px;
 }
