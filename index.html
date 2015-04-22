@@ -10,21 +10,31 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/main.css">
 
-	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
-	<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script type="text/javascript" src="js/jcarousellite.js"></script>
 
+	<script src="js/perehod.js"></script>
+
+	<!-- Add fancyBox -->
+	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 
 </head>
 
 <body>
+
+	<a href="#" id="Go_Top" class="top-arr"></a>
+
 	<div class="nav">
 		<div class="nav-center">
-			<a href="" class="nav-link">Наши услуги</a>
-			<a href="" class="nav-link">Выполненные проекты</a>
-			<a href="" class="nav-link">Отзывы клиентов</a>
-			<a href="" class="nav-link">Лицензии</a>
-			<a href="" class="nav-link">Контакты</a>
+			<a href="#services" class="nav-link scrollto">Наши услуги</a>
+			<a href="#projects" class="nav-link scrollto">Выполненные проекты</a>
+			<a href="#review" class="nav-link scrollto">Отзывы клиентов</a>
+			<a href="#lic" class="nav-link scrollto">Лицензии</a>
+			<a href="#contacts" class="nav-link scrollto">Контакты</a>
 			<div class="nav-phone">(4812) <span class="nav-phone-big">20-96-45</span></div>
 		</div>
 	</div>
@@ -60,7 +70,7 @@
 		</div>
 	</div>
 
-	<div class="services">
+	<div class="services" name="services" id="services">
 		<div class="b-center">
 			<div class="b-title"><span class="services-title-bg">Наши услуги</span></div>
 			<div class="services-description">
@@ -83,7 +93,7 @@
 		</div>
 	</div>
 
-	<div class="projects">
+	<div class="projects" name="projects" id="projects">
 		<div class="b-center">
 			<div class="b-title"><span class="projects-title-bg">Выполненные проекты</span></div>
 			<div class="services-description">
@@ -97,7 +107,10 @@
 			<div class="projects-gallery">
 				<ul>
 					<li>
-						<a href="#"><img src="projects/project_01.jpg" width="216px" height="135px" alt=""/></a>
+						<a href="projects/01_01.jpg" class="fancybox-thumb" rel="project_01" title="ТЦ «Макси»"><img src="projects/project_01.jpg" width="216px" height="135px" alt=""/></a>
+						<a href="projects/01_02.jpg" class="fancybox-thumb" rel="project_01" title="ТЦ «Макси»"></a>
+						<a href="projects/01_03.jpg" class="fancybox-thumb" rel="project_01" title="ТЦ «Макси»"></a>
+
 						<div class="project-title">ТЦ «Макси»</div>
 						<div class="project-address">г. Смоленск, ул. 25 Сентября</div>
 						<div class="project-description">
@@ -106,7 +119,9 @@
 						</div>
 					</li>
 					<li>
-						<img src="projects/project_02.jpg" width="216px" height="135px" alt=""/>
+						<a href="projects/02_01.jpg" class="fancybox-thumb" rel="project_02" title="«Смоленская ГРЭС» ОАО Э.ОН Россия»"><img src="projects/project_02.jpg" width="216px" height="135px" alt=""/></a>
+						<a href="projects/02_02.jpg" class="fancybox-thumb" rel="project_02" title="«Смоленская ГРЭС» ОАО Э.ОН Россия»"></a>
+						<a href="projects/02_03.jpg" class="fancybox-thumb" rel="project_02" title="«Смоленская ГРЭС» ОАО Э.ОН Россия»"></a>
 						<div class="project-title">«Смоленская ГРЭС» ОАО Э.ОН Россия»</div>
 						<div class="project-address">Смоленская обл., п. Озерный</div>
 						<div class="project-description">
@@ -115,7 +130,12 @@
 						</div>
 					</li>
 					<li>
-						<img src="projects/project_03.jpg" width="216px" height="135px" alt=""/>
+						<a href="projects/03_01.jpg" class="fancybox-thumb" rel="project_03" title="ТЦ «Мануфактура»"><img src="projects/project_03.jpg" width="216px" height="135px" alt=""/></a>
+						<a href="projects/03_02.jpg" class="fancybox-thumb" rel="project_03" title="ТЦ «Мануфактура»"></a>
+						<a href="projects/03_03.jpg" class="fancybox-thumb" rel="project_03" title="ТЦ «Мануфактура»"></a>
+						<a href="projects/03_04.jpg" class="fancybox-thumb" rel="project_03" title="ТЦ «Мануфактура»"></a>
+						<a href="projects/03_05.jpg" class="fancybox-thumb" rel="project_03" title="ТЦ «Мануфактура»"></a>
+						<a href="projects/03_06.jpg" class="fancybox-thumb" rel="project_03" title="ТЦ «Мануфактура»"></a>
 						<div class="project-title">ТЦ «Мануфактура»</div>
 						<div class="project-address">г. Смоленск, ул. Н. Московская, 2/8</div>
 						<div class="project-description">
@@ -125,7 +145,9 @@
 						</div>
 					</li>
 					<li>
-						<img src="projects/project_04.jpg" width="216px" height="135px" alt=""/>
+						<a href="projects/04_01.jpg" class="fancybox-thumb" rel="project_04" title="Физкультурно- оздоровительный комплекс"><img src="projects/project_04.jpg" width="216px" height="135px" alt=""/></a>
+						<a href="projects/04_02.jpg" class="fancybox-thumb" rel="project_04" title="Физкультурно- оздоровительный комплекс"></a>
+						<a href="projects/04_03.jpg" class="fancybox-thumb" rel="project_04" title="Физкультурно- оздоровительный комплекс"></a>
 						<div class="project-title">Физкультурно- оздоровительный комплекс</div>
 						<div class="project-address">г. Смоленск, ул. Черняховского</div>
 						<div class="project-description">
@@ -133,13 +155,126 @@
 							Система автоматического водяного пожаротушения
 						</div>
 					</li>
-					<li><img src="projects/project_02.jpg" width="216px" height="135px" alt=""/></li>
-					<li><img src="projects/project_03.jpg" width="216px" height="135px" alt=""/></li>
-					<li><img src="projects/project_04.jpg" width="216px" height="135px" alt=""/></li>
+					<li>
+						<a href="projects/05_01.jpg" class="fancybox-thumb" rel="project_05" title="КДЦ «Губернский»"><img src="projects/project_05.jpg" width="216px" height="135px" alt=""/></a>
+						<a href="projects/05_02.jpg" class="fancybox-thumb" rel="project_05" title="КДЦ «Губернский»"></a>
+						<a href="projects/05_03.jpg" class="fancybox-thumb" rel="project_05" title="КДЦ «Губернский»"></a>
+						<div class="project-title">КДЦ «Губернский»</div>
+						<div class="project-address"> г. Смоленск, ул Маршала Жукова д. 4</div>
+						<div class="project-description">
+							Монтажные и пуско-наладочные работы<br><br>
+							Система пожарной сигнализации<br><br>
+							Система оповещения и управления эвакуацией людей при пожаре
+						</div>
+					</li>
 				</ul>
 			</div>
 		</div>
 	</div>
+
+	<div class="projects-map">
+		<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=WcJG4pBQ866LjbTvECqT5AHH-CMB31hb&width=100%&height=450"></script>
+	</div>
+
+	<div class="review" name="review" id="review">
+		<div class="b-center">
+			<div class="b-title"><span class="review-title-bg">Отзывы клиентов</span></div>
+		</div>
+
+		<div class="review-gallery-all">
+			<img src="i/arr_left.png" height="44" width="27" class="review-prev arr disabled">
+			<img src="i/arr_right.png" height="44" width="27" class="review-next arr">
+			<div class="review-gallery">
+				<ul>
+					<li>
+						<a href="review/01.html" class="btn-view-review various" data-fancybox-type="iframe"><img src="i/btn_view_review.png" height="129" width="293" alt=""></a>
+						<a href="review/01.html" data-fancybox-type="iframe" class="various"><img src="review/review_01.jpg" height="134" width="293" alt=""></a>
+						<a href="review/01.html" class="review-title various" data-fancybox-type="iframe">И. Д. Белохвостова</a>
+						<div class="review-address">Директор ГБУК «Смоленская областная универсальная библиотека им. А.Т. Твардовского»</div>
+						<div class="review-text">
+							Работы по монтажу и наладке оборудования автоматической пожарнои сигнализации и системы оповещения о пожаре выполнены на высоком профессиональном уровне в соответствии с СНиП и ГОСТ и проектной документацией. Обеспечивалось соблюдение правил техники безопасности, требования охраны труда и пожарной безопасности. Претензий по качеству работ и срокам исполнения заказа нет.
+						</div>
+					</li>
+					<li>
+						<a href="review/02.html" class="btn-view-review various" data-fancybox-type="iframe"><img src="i/btn_view_review.png" height="129" width="293" alt=""></a>
+						<a href="review/02.html" data-fancybox-type="iframe" class="various"><img src="review/review_02.jpg" height="134" width="293" alt=""></a>
+						<a href="review/02.html" class="review-title various" data-fancybox-type="iframe">Романова Елена Борисовна</a>
+						<div class="review-address">Директор ГБУК «Смоленская областная универсальная библиотека им. А.Т. Твардовского»</div>
+						<div class="review-text">
+							Благодарим ООО «Приоритет плюс» за своевременно реализованный проект видеонаблюдения в нашем Складском комплексе «Обнинскстрой». Постановленные перед компание задачи выполнены. Система видеонаблюдения предназначалась для повышения уровня безопасности, так же получилось достичь эффективности и дисциплины персонала. Готовы рекомендовать данную компанию
+						</div>
+					</li>
+					<li>
+						<a href="review/03.html" class="btn-view-review various" data-fancybox-type="iframe"><img src="i/btn_view_review.png" height="129" width="293" alt=""></a>
+						<a href="review/03.html" data-fancybox-type="iframe" class="various"><img src="review/review_03.jpg" height="134" width="293" alt=""></a>
+						<a href="review/03.html" class="review-title various" data-fancybox-type="iframe">В. П. Разуваев</a>
+						<div class="review-address">Директор КЦ «Губернский»</div>
+						<div class="review-text">
+							Оборудование автоматической пожарной сигнализации и системы оповещения о пожаре поставлено в установленные сроки согласно c проектной документацией, соответствует ГОСТам, имеет соответствуещие сертефикаты. Отдельно хотелось бы отметить оперативность и доброжелательность сотрудников, работающих с нашей организацией.
+						</div>
+					</li>
+					<li>
+						<a href="review/04.html" class="btn-view-review various" data-fancybox-type="iframe"><img src="i/btn_view_review.png" height="129" width="293" alt=""></a>
+						<a href="review/04.html" data-fancybox-type="iframe" class="various"><img src="review/review_no_image.jpg" height="134" width="293" alt=""></a>
+						<a href="review/04.html" class="review-title various" data-fancybox-type="iframe">И. Д. Белохвостова</a>
+						<div class="review-address">Директор ГБУК «Смоленская областная универсальная библиотека им. А.Т. Твардовского»</div>
+						<div class="review-text">
+							Работы по монтажу и наладке оборудования автоматической пожарнои сигнализации и системы оповещения о пожаре выполнены на высоком профессиональном уровне в соответствии с СНиП и ГОСТ и проектной документацией. Обеспечивалось соблюдение правил техники безопасности, требования охраны труда и пожарной безопасности. Претензий по качеству работ и срокам исполнения заказа нет.
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="lic" name="lic" id="lic">
+		<div class="b-center">
+			<div class="b-title"><span class="lic-title-bg">Лицензии</span></div>
+		</div>
+	</div>
+
+	<div class="lic-gallery-all">
+		<img src="i/arr_left.png" height="44" width="27" class="lic-prev arr disabled">
+		<img src="i/arr_right.png" height="44" width="27" class="lic-next arr disabled">
+		<div class="lic-gallery">
+			<ul>
+				<li>
+					<a href="lic/01_01.jpg" class="fancybox-thumb" rel="lic_01"><img src="lic/lic_01.jpg" width="216px" height="270px" alt=""/></a>
+				</li>
+				<li>
+					<a href="lic/02_01.jpg" class="fancybox-thumb" rel="lic_02"><img src="lic/lic_02.jpg" width="216px" height="270px" alt=""/></a>
+					<a href="lic/02_02.jpg" class="fancybox-thumb" rel="lic_02"></a>
+				</li>
+				<li>
+					<a href="lic/03_01.jpg" class="fancybox-thumb" rel="lic_03"><img src="lic/lic_03.jpg" width="216px" height="270px" alt=""/></a>
+					<a href="lic/03_02.jpg" class="fancybox-thumb" rel="lic_03"></a>
+					<a href="lic/03_03.jpg" class="fancybox-thumb" rel="lic_03"></a>
+				</li>
+				<li>
+					<a href="lic/02_01.jpg" class="fancybox-thumb" rel="lic_04"><img src="lic/lic_04.jpg" width="216px" height="270px" alt=""/></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="contacts" name="contacts" id="contacts">
+		<div class="b-center">
+			<div class="b-contacts">
+				<div class="contacts-title">Контакты</div>
+				<div class="contacts-phone">Телефон: (4812) 20-96-45</div>
+				<div class="contacts-address">214031, г. Смоленск, ул. 25 Сентября, д. 64</div>
+				<div class="contacts-bank">
+					<b>Банковские реквизиты:</b><br>
+					р/с 40702810800290000442 в Смоленском филиале ОАО АКБ «Связь-Банк», к/с 30101810400000000737 БИК046614737<br><br>
+					ИНН  6731074094<br>
+					КПП 673101001<br>
+					ОКПО 87928191
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=TKi9zZQ4HP9ExhhduuHqxZjy1gv6xwVy&width=100%&height=400"></script>
+	</div>
+
 </body>
 
 <script type="text/javascript">
@@ -148,11 +283,53 @@ jQuery(function(){
 jQuery(".projects-gallery").jCarouselLite({
 		btnNext: ".projects-next",
 		btnPrev: ".projects-prev",
-		mouseWheel: false,
 		circular: false,
 		visible: 4,
 	});
+jQuery(".review-gallery").jCarouselLite({
+		btnNext: ".review-next",
+		btnPrev: ".review-prev",
+		circular: false,
+		visible: 3,
+	});
+jQuery(".lic-gallery").jCarouselLite({
+		btnNext: ".lic-next",
+		btnPrev: ".lic-prev",
+		circular: false,
+		visible: 4,
+	});
+});
+</script>
 
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox-thumb").fancybox({
+			padding : 0,
+			prevEffect	: 'none',
+			nextEffect	: 'none',
+			helpers	: {
+				title	: {
+					type: 'outside'
+				},
+				thumbs	: {
+					width	: 150,
+					height	: 100
+				}
+			}
+		});
+	});
+	$(document).ready(function() {
+	$(".various").fancybox({
+		maxWidth	: 800,
+		maxHeight	: 600,
+		fitToView	: false,
+		width		: '70%',
+		height		: '70%',
+		autoSize	: false,
+		closeClick	: false,
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
 });
 </script>
 

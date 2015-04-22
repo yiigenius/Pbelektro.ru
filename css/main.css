@@ -2,7 +2,7 @@
 @import "http://webfonts.ru/import/fira.css";
 
 body {
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'Fira Sans', Tahoma, sans-serif;
 }
 
 .orange {
@@ -32,6 +32,35 @@ body {
 	cursor: default;
 }
 
+.top-arr {
+	width: 80px;
+	background-color: rgba(255,255,255,0.5);
+	background-image: url(../i/bg_btn_top.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	position: fixed;
+	bottom: 0px;
+	top: 0;
+	right: 0px;
+	cursor:pointer;
+	display:none;
+	/*z-index: 9999999;*/
+	transition: all 0.5s ease;
+}
+
+.top-arr:hover {
+	background-color: rgba(255,255,255,1);
+}
+
+input[type="text"] {
+	transition: all 0.5s ease;
+}
+
+input[type="text"]:focus {
+	outline: none;
+	box-shadow: 0 0 10px #0a3f50;
+}
+
 
 
 .nav {
@@ -56,6 +85,11 @@ body {
 	color: #fff;
 	text-decoration: none;
 	font-size: 16px;
+	transition: all 0.5s ease;
+}
+
+.nav-link:hover {
+	color:#ef7900;
 }
 
 .nav-phone {
@@ -141,6 +175,11 @@ body {
 	font-size: 18px;
 	font-weight: bold;
 	cursor: pointer;
+	transition: all 0.5s ease;
+}
+
+.call-btn:hover {
+	background-color: #ef7900;
 }
 
 .promo-right-col {
@@ -250,17 +289,18 @@ body {
 	margin: 0 8px;
 	background-color: #fff;
 	min-height: 350px;
+	transition: all 0.5s ease;
 }
 
 .projects-prev {
 	position: absolute;
-	top: 50px;
+	top: 115px;
 	left: 0;
 }
 
 .projects-next {
 	position: absolute;
-	top: 50px;
+	top: 115px;
 	right: 0;
 }
 
@@ -279,4 +319,172 @@ body {
 .project-description {
 	padding: 10px;
 	font-size: 12px;
+}
+
+
+
+.review {
+	background-color: #d9d7d0;
+	background-image: url(../i/bg_review.png);
+	background-repeat: repeat-x;
+	padding: 54px 0 27px 0;
+}
+
+.review-title-bg {
+	background-color: #d9d7d0;
+	padding-right: 20px;
+}
+
+.review-gallery-all {
+	width: 999px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.review-gallery {
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.review-gallery ul li {
+	width: 293px;
+	margin: 0 8px;
+	background-color: #fff;
+	min-height: 450px;
+	position: relative;
+}
+
+.review-prev {
+	position: absolute;
+	top: 150px;
+	left: 0;
+}
+
+.review-next {
+	position: absolute;
+	top: 150px;
+	right: 0;
+}
+
+.review-title {
+	padding: 20px;
+	font-size: 18px;
+	font-weight: bold;
+	display: block;
+	color: #000;
+}
+
+.review-address {
+	padding: 0 20px;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.review-text {
+	padding: 20px;
+	font-size: 12px;
+}
+
+.btn-view-review {
+	position: absolute;
+	bottom: 0;
+	z-index: 2;
+	display: block;
+}
+
+.review-title-big {
+	padding: 20px;
+	font-size: 28px;
+	font-weight: bold;
+	display: block;
+	color: #000;
+}
+
+.review-text-big {
+	padding: 20px;
+	font-size: 18px;
+	line-height: 27px;
+}
+
+
+
+.lic {
+	background-color: #fff;
+	background-image: url(../i/bg_lic.png);
+	background-repeat: repeat-x;
+	padding: 54px 0 27px 0;
+}
+
+.lic-title-bg {
+	background-color: #fff;
+	padding-right: 20px;
+}
+
+.lic-gallery-all {
+	width: 999px;
+	margin: 0 auto;
+	position: relative;
+	padding-bottom: 54px;
+}
+
+.lic-gallery {
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.lic-gallery ul li {
+	width: 216px;
+	margin: 0 8px;
+	background-color: #fff;
+}
+
+.lic-prev {
+	position: absolute;
+	top: 115px;
+	left: 0;
+}
+
+.lic-next {
+	position: absolute;
+	top: 115px;
+	right: 0;
+}
+
+
+
+.contacts {
+	position: relative;
+}
+
+.b-contacts {
+	width: 340px;
+	padding: 20px;
+	position: absolute;
+	z-index: 999;
+	background-color: rgba(255,255,255,0.9);
+	top: 27px;
+}
+
+.contacts-title {
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 27px;
+}
+
+.contacts-phone {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 27px;
+}
+
+.contacts-address {
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 27px;
+}
+
+.contacts-bank {
+	color: #727272;
+	font-size: 14px;
+	line-height: 20px;
 }
